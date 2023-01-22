@@ -9,6 +9,7 @@ body {
   color: $primary-fc;
   font-weight: 400;
   font-size: 2rem;
+  line-height: 1.6;
 }
 
 h1,
@@ -18,6 +19,12 @@ a,
 button,
 label {
   font-family: $heading-ff;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
 }
 
 h1 {
@@ -37,9 +44,9 @@ input,
 textarea,
 input::placeholder,
 textarea::placeholder {
-  line-height: 3.2rem;
   font-family: $body-ff;
   color: $primary-fc;
+  line-height: 1.6;
 }
 // consider adding letter spacing and more line-height to headings
 // ?maybe line height to most body text

@@ -1,6 +1,10 @@
   @use "variables" as *;
   
   .contact-section form {
+    textarea {
+      resize: vertical;
+      // reduce col width and then increase with media q? or checkout proj 1 form styling
+    }
     button {
       border: none;
       padding: 0.55em 0.75em;

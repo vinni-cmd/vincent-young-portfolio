@@ -235,6 +235,7 @@ body {
   color: #14070e;
   font-weight: 400;
   font-size: 2rem;
+  line-height: 1.6;
 }
 
 h1,
@@ -244,6 +245,12 @@ a,
 button,
 label {
   font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
 }
 
 h1 {
@@ -260,36 +267,46 @@ h3 {
 }
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-  line-height: 3.2rem;
   font-family: "Lora", serif;
   color: #14070e;
+  line-height: 1.6;
 }
 
 input::-moz-placeholder, textarea::-moz-placeholder {
-  line-height: 3.2rem;
   font-family: "Lora", serif;
   color: #14070e;
+  line-height: 1.6;
 }
 
 input:-ms-input-placeholder, textarea:-ms-input-placeholder {
-  line-height: 3.2rem;
   font-family: "Lora", serif;
   color: #14070e;
+  line-height: 1.6;
 }
 
 input::-ms-input-placeholder, textarea::-ms-input-placeholder {
-  line-height: 3.2rem;
   font-family: "Lora", serif;
   color: #14070e;
+  line-height: 1.6;
 }
 
 input,
 textarea,
 input::placeholder,
 textarea::placeholder {
-  line-height: 3.2rem;
   font-family: "Lora", serif;
   color: #14070e;
+  line-height: 1.6;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .wrapper {
@@ -299,7 +316,6 @@ textarea::placeholder {
 
 img {
   max-width: 100%;
-  height: auto;
   display: block;
 }
 
@@ -314,7 +330,7 @@ a {
 }
 
 header {
-  background-image: url(../../../assets/images/jason-leem-50bzI1F6urA-unsplash.jpg);
+  background-image: url(../../assets/images/jason-leem-50bzI1F6urA-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
@@ -324,7 +340,16 @@ header p {
   font-weight: 500;
 }
 
+.contact-section form textarea {
+  resize: vertical;
+}
 .contact-section form button {
   border: none;
   padding: 0.55em 0.75em;
+}
+
+footer {
+  background-color: #365c46;
+  text-align: center;
+  color: #f8f4f3;
 }
