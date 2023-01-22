@@ -309,6 +309,10 @@ body {
           flex-direction: column;
 }
 
+section {
+  padding: 4em 0;
+}
+
 .wrapper {
   width: min(90%, 1000px);
   margin: 0 auto;
@@ -329,6 +333,11 @@ a {
   text-decoration: none;
 }
 
+h1,
+h2 {
+  margin: 0;
+}
+
 header {
   background-image: url(../../assets/images/jason-leem-50bzI1F6urA-unsplash.jpg);
   background-repeat: no-repeat;
@@ -338,6 +347,52 @@ header {
 }
 header p {
   font-weight: 500;
+}
+
+h1 > * {
+  display: block;
+}
+
+.social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1em;
+}
+.social-list a {
+  display: block;
+  color: #14070e;
+  font-size: 5rem;
+  padding: 0 0.3em;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.social-list a:hover, .social-list a:focus {
+  color: #db9999;
+}
+
+.about-section {
+  background-color: #f7e4dc;
+}
+.about-section .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about-section .image-container img {
+  border-radius: 1%;
+}
+@media (min-width: 480px) {
+  .about-section .image-container img {
+    width: 430px;
+  }
 }
 
 .contact-section form textarea {
