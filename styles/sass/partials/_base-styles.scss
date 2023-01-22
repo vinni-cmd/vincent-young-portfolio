@@ -5,6 +5,10 @@ body {
   flex-direction: column;
 }
 
+section {
+  padding: 4em 0;
+}
+
 .wrapper {
     width: min(90%, 1000px);
     margin: 0 auto;
@@ -23,6 +27,12 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
 }
 
 // *:focus {
