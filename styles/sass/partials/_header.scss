@@ -1,0 +1,12 @@
+@use "variables" as *;
+
+header {
+  background-image: url(../../../assets/images/jason-leem-50bzI1F6urA-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  color: $secondary-fc;
+  p {
+    font-weight: 500;
+  }
+}

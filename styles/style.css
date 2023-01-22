@@ -232,7 +232,63 @@ html {
 
 body {
   font-family: "Lora", serif;
+  color: #14070e;
+  font-weight: 400;
   font-size: 2rem;
+}
+
+h1,
+h2,
+h3,
+a,
+button,
+label {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: clamp(5rem, 10vw + 1rem, 13.8rem);
+  color: #f8f4f3;
+}
+
+h2 {
+  font-size: 4.2rem;
+}
+
+h3 {
+  font-size: 3.2rem;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  line-height: 3.2rem;
+  font-family: "Lora", serif;
+  color: #14070e;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  line-height: 3.2rem;
+  font-family: "Lora", serif;
+  color: #14070e;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  line-height: 3.2rem;
+  font-family: "Lora", serif;
+  color: #14070e;
+}
+
+input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+  line-height: 3.2rem;
+  font-family: "Lora", serif;
+  color: #14070e;
+}
+
+input,
+textarea,
+input::placeholder,
+textarea::placeholder {
+  line-height: 3.2rem;
+  font-family: "Lora", serif;
   color: #14070e;
 }
 
@@ -255,14 +311,20 @@ ul {
 
 a {
   text-decoration: none;
-  color: #14070e;
+}
+
+header {
+  background-image: url(../../../assets/images/jason-leem-50bzI1F6urA-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  color: #f8f4f3;
+}
+header p {
+  font-weight: 500;
 }
 
 .contact-section form button {
-  font-family: "Roboto", sans-serif;
-  color: #14070e;
-  font-size: 1rem;
-  font-weight: 700;
   border: none;
   padding: 0.55em 0.75em;
 }
