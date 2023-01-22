@@ -1,3 +1,6 @@
-body {
-  background-color: orange;
-}
+@use "./partials/setup";
+@use "./partials/variables";
+@use "./partials/typography";
+@use "./partials/base-styles";
+
+@use "./partials/contact-form"

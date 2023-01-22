@@ -1,0 +1,11 @@
+@use "variables" as *;
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $body-ff;
+  font-size: 2rem;
+  color: $primary-fc;
+}
