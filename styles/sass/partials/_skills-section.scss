@@ -1,0 +1,30 @@
+@use "variables" as *;
+
+.skills-section {
+  background-color: $secondary-bc;
+  color: $secondary-fc;
+  text-align: center;
+  h2 {
+    margin-bottom: 1em;
+  }
+}
+
+.skills-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    i {
+      font-size: 4rem;
+    }
+    p {
+      font-size: 1.5rem;
+      margin: 0;
+      width: min-content;
+    }
+  }
+}
