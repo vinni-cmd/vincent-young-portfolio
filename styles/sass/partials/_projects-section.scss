@@ -1,1 +1,64 @@
-// put a flex wrap on the card container
+@use "variables" as *;
+
+.project-section {
+  background-color: $primary-bc;
+  h2{
+    margin-bottom: 1em;
+  }
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.projects-container > li {
+background-color: $secondary-fc;
+@media (min-width: 768px) {
+  width: calc( calc(100% - 3rem) / 2);
+}
+.project-text {
+  padding: 1em;
+}
+}
+
+.skills {
+    color: $secondary-bc;
+    font-family: $heading-ff;
+    li {
+      display: inline;
+    }
+    // li:not(:last-child) {
+    //   padding-right: 1rem;
+    //   border-right: 3px solid $secondary-bc;
+    // }
+    // li:not(:first-child) {
+    //   padding-left: 1rem;
+    // }
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  li {
+    flex-basis: 40%;
+  }
+  a {
+    display: block;
+    text-align: center;
+    color: $primary-fc;
+    background-color: $primary-bc;
+    padding: 0.5em 1.5em;
+    transition: all 0.3s linear;
+    border: 1px solid $secondary-bc;
+    &:hover,
+    &:focus {
+      // there might be room for an @if or mixin and if combo since the social in contact section will have different background
+      background-color: $primary-ac;
+      color: white;
+      scale: 1.1;
+    }
+  }
+}
