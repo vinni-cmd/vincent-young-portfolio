@@ -399,7 +399,18 @@ h1 > * {
 .skills-section {
   background-color: #365c46;
   color: #f8f4f3;
-  text-align: center;
+}
+.skills-section .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .skills-section h2 {
   margin-bottom: 1em;
@@ -412,9 +423,14 @@ h1 > * {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 2em;
+  gap: 3em;
+  padding: 1em;
+  max-width: 850px;
 }
 .skills-list li {
   display: -webkit-box;
@@ -427,16 +443,18 @@ h1 > * {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 0.5em;
 }
 .skills-list li i {
-  font-size: 4rem;
+  font-size: 5rem;
 }
 .skills-list li p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin: 0;
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
+  text-align: center;
 }
 
 .contact-section form textarea {
