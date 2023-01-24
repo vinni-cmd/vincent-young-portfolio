@@ -299,6 +299,10 @@ textarea::placeholder {
   line-height: 1.6;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -491,6 +495,10 @@ h1 > * {
 }
 .skills li {
   display: inline;
+}
+.skills li:not(:last-child) {
+  padding-right: 1rem;
+  border-right: 3px solid #365c46;
 }
 
 .project-links {

@@ -29,10 +29,10 @@ background-color: $secondary-fc;
     li {
       display: inline;
     }
-    // li:not(:last-child) {
-    //   padding-right: 1rem;
-    //   border-right: 3px solid $secondary-bc;
-    // }
+    li:not(:last-child) {
+      padding-right: 1rem;
+      border-right: 3px solid $secondary-bc;
+    }
     // li:not(:first-child) {
     //   padding-left: 1rem;
     // }
