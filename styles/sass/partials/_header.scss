@@ -6,6 +6,9 @@ header {
   background-size: cover;
   min-height: 100vh;
   color: $secondary-fc;
+  .wrapper {
+    position: relative;
+  }
   p {
     font-weight: 500;
     color: inherit;
