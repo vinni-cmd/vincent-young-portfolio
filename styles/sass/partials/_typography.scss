@@ -33,11 +33,16 @@ h1 {
 }
 
 h2 {
-  font-size: 4.2rem;
+  font-size: 5rem;
 }
 
 h3 {
   font-size: clamp(2.6rem ,5vw + 1rem, 3.2rem);
+}
+
+p {
+  // creates a bit more contrast between header and p text
+  color: #555;
 }
 
 input,
@@ -48,5 +53,6 @@ textarea::placeholder {
   color: $primary-fc;
   line-height: 1.6;
 }
+
 // consider adding letter spacing and more line-height to headings
 // ?maybe line height to most body text

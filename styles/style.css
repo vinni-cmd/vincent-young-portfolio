@@ -259,11 +259,15 @@ h1 {
 }
 
 h2 {
-  font-size: 4.2rem;
+  font-size: 5rem;
 }
 
 h3 {
   font-size: clamp(2.6rem, 5vw + 1rem, 3.2rem);
+}
+
+p {
+  color: #555;
 }
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
@@ -342,6 +346,10 @@ h2 {
   margin: 0;
 }
 
+p {
+  max-width: 60ch;
+}
+
 header {
   background-image: url(../../assets/images/jason-leem-50bzI1F6urA-unsplash.jpg);
   background-repeat: no-repeat;
@@ -351,6 +359,7 @@ header {
 }
 header p {
   font-weight: 500;
+  color: inherit;
 }
 
 h1 > * {
