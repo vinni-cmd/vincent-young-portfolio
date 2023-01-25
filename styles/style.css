@@ -271,36 +271,31 @@ p {
 }
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-  font-family: "Lora", serif;
+  font: inherit;
   color: #14070e;
-  line-height: 1.6;
 }
 
 input::-moz-placeholder, textarea::-moz-placeholder {
-  font-family: "Lora", serif;
+  font: inherit;
   color: #14070e;
-  line-height: 1.6;
 }
 
 input:-ms-input-placeholder, textarea:-ms-input-placeholder {
-  font-family: "Lora", serif;
+  font: inherit;
   color: #14070e;
-  line-height: 1.6;
 }
 
 input::-ms-input-placeholder, textarea::-ms-input-placeholder {
-  font-family: "Lora", serif;
+  font: inherit;
   color: #14070e;
-  line-height: 1.6;
 }
 
 input,
 textarea,
 input::placeholder,
 textarea::placeholder {
-  font-family: "Lora", serif;
+  font: inherit;
   color: #14070e;
-  line-height: 1.6;
 }
 
 html {
@@ -351,6 +346,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
+  padding-top: 10rem;
   color: #f8f4f3;
 }
 header .wrapper {
@@ -597,6 +593,16 @@ nav {
   .projects-container > li {
     width: calc((100% - 3rem) / 2);
   }
+}
+.projects-container > li .image-container img {
+  -webkit-filter: saturate(10%);
+          filter: saturate(10%);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.projects-container > li .image-container img:hover {
+  -webkit-filter: saturate(100%);
+          filter: saturate(100%);
 }
 .projects-container > li .project-text {
   padding: 1em;

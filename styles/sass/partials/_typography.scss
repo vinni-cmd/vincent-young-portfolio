@@ -49,9 +49,9 @@ input,
 textarea,
 input::placeholder,
 textarea::placeholder {
-  font-family: $body-ff;
+  font: inherit;
   color: $primary-fc;
-  line-height: 1.6;
+
 }
 
 // consider adding letter spacing and more line-height to headings
