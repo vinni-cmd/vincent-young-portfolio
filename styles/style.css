@@ -346,10 +346,6 @@ h2 {
   margin: 0;
 }
 
-p {
-  max-width: 60ch;
-}
-
 header {
   background-image: url(../../assets/images/jason-leem-50bzI1F6urA-unsplash.jpg);
   background-repeat: no-repeat;
@@ -407,7 +403,7 @@ nav {
   transition: all 0.3s ease-in-out;
 }
 .nav-list .nav-link:hover, .nav-list .nav-link:focus {
-  color: #365c46;
+  color: #db9999;
   scale: 1.1;
 }
 
@@ -512,6 +508,9 @@ nav {
   .about-section .image-container img {
     width: 430px;
   }
+}
+.about-section p {
+  max-width: 60ch;
 }
 
 .skills-section {
@@ -643,6 +642,10 @@ nav {
   scale: 1.1;
 }
 
+.contact-section p {
+  max-width: 60ch;
+}
+
 .contact-section form textarea {
   resize: vertical;
 }
@@ -655,4 +658,7 @@ footer {
   background-color: #365c46;
   text-align: center;
   color: #f8f4f3;
+}
+footer p {
+  color: inherit;
 }
