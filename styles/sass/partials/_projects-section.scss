@@ -18,6 +18,14 @@ background-color: $secondary-fc;
 @media (min-width: 768px) {
   width: calc( calc(100% - 3rem) / 2);
 }
+.image-container img {
+  // might need to set a fixe height (make it height of largest child content..mmmm) on parent container and make images occupy 40% of parent
+    filter: saturate(10%);
+    transition: all 0.5s ease-in-out;
+    &:hover {
+      filter: saturate(100%);
+    }
+}
 .project-text {
   padding: 1em;
 }
