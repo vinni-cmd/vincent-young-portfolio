@@ -336,6 +336,15 @@ a {
   text-decoration: none;
 }
 
+p a {
+  color: #365c46;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+p a:hover, p a:focus {
+  color: #db9999;
+}
+
 h1,
 h2 {
   margin: 0;
@@ -562,6 +571,7 @@ nav {
   font-size: 5rem;
 }
 .skills-list li p {
+  color: inherit;
   font-size: 1.3rem;
   margin: 0;
   width: -webkit-min-content;
@@ -650,14 +660,6 @@ nav {
 
 .contact-section p {
   max-width: 60ch;
-}
-
-.contact-section form textarea {
-  resize: vertical;
-}
-.contact-section form button {
-  border: none;
-  padding: 0.55em 0.75em;
 }
 
 footer {

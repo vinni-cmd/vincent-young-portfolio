@@ -33,11 +33,16 @@ a {
   text-decoration: none;
 }
 
-h1,
-h2 {
-  margin: 0;
+p a {
+  color: $secondary-bc;
+  transition: all 0.3s ease-in-out;
+  &:hover,
+  &:focus {
+    color: $primary-ac;
+  }
 }
 
-// *:focus {
-//     outline: none;
-// }
+h1,
+h2 {
+  margin: 0;        
+}
