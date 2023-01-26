@@ -1,0 +1,58 @@
+@use "variables" as *;
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $body-ff;
+  color: $primary-fc;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+a,
+button,
+label {
+  font-family: $heading-ff;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: clamp(5rem, 10vw + 1rem, 13.8rem);
+  color: $secondary-fc;
+}
+
+h2 {
+  font-size: 5rem;
+}
+
+h3 {
+  font-size: clamp(2.6rem ,5vw + 1rem, 3.2rem);
+}
+
+p {
+  // creates a bit more contrast between header and p text
+  color: #555;
+}
+
+input,
+textarea,
+input::placeholder,
+textarea::placeholder {
+  font: inherit;
+  color: $primary-fc;
+
+}
+
+// consider adding letter spacing and more line-height to headings
+// ?maybe line height to most body text

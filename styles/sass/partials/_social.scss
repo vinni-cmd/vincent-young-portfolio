@@ -1,0 +1,19 @@
+@use "variables" as *;
+
+.social-list {
+  display: flex;
+  gap: 1em;
+  a {
+    display: block;
+    color: $primary-fc; 
+    font-size: 4.5rem;
+    padding: 0.3em;
+    transition: all 0.3s linear;
+    &:hover,
+    &:focus {
+      // there might be room for an @if or mixin and if combo since the social in contact section will have different background
+      color: $primary-ac;
+      scale: 1.2;
+    }
+  }
+}

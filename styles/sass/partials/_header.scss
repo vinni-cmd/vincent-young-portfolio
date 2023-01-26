@@ -1,0 +1,21 @@
+@use "variables" as *;
+
+header {
+  background-image: url(../../assets/images/jason-leem-50bzI1F6urA-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  padding-top: 10rem;
+  color: $secondary-fc;
+  .wrapper {
+    position: relative;
+  }
+  p {
+    font-weight: 500;
+    color: inherit;
+  }
+}
+
+h1 > * {
+  display: block;
+}

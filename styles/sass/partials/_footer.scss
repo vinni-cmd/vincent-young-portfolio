@@ -1,0 +1,10 @@
+@use "variables" as *;
+
+footer {
+  background-color: $secondary-bc;
+  text-align: center;
+  color: $secondary-fc;
+  p {
+    color: inherit;
+  }
+}

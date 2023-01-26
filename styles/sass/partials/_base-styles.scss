@@ -1,0 +1,43 @@
+@use "variables" as *;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  padding: 4em 0;
+}
+
+.wrapper {
+    width: min(90%, 1000px);
+    margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+// *:focus {
+//     outline: none;
+// }
