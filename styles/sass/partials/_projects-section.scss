@@ -9,21 +9,28 @@
 
 .projects-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 3rem;
 }
 
 .projects-container > li {
-background-color: $secondary-fc;
-@media (min-width: 768px) {
-  width: calc( calc(100% - 3rem) / 2);
-}
+  border-radius: 10px;
+  background-color: $secondary-fc;
+  @media (min-width: 768px) {
+    display: flex;    
+  }
 .image-container img {
-  // might need to set a fixe height (make it height of largest child content..mmmm) on parent container and make images occupy 40% of parent
-    filter: saturate(10%);
+  height: 100%;
+  object-fit: cover;
+  object-position: center;  
+  filter: saturate(10%);
+    border-radius: 10px 10px 0 0;
     transition: all 0.5s ease-in-out;
     &:hover {
       filter: saturate(100%);
+    }
+    @media (min-width: 768px) {
+      border-radius: 10px 0 0 10px;      
     }
 }
 .project-text {
@@ -41,21 +48,15 @@ background-color: $secondary-fc;
       padding-right: 1rem;
       border-right: 3px solid $secondary-bc;
     }
-    // li:not(:first-child) {
-    //   padding-left: 1rem;
-    // }
 }
 
 .project-links {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
+  justify-content: end;
   li {
-    flex-basis: 40%;
+    width: 11rem;
   }
   a {
-    display: block;
-    text-align: center;
     color: $primary-fc;
     background-color: $primary-bc;
     padding: 0.5em 1.5em;
@@ -63,7 +64,6 @@ background-color: $secondary-fc;
     border: 1px solid $secondary-bc;
     &:hover,
     &:focus {
-      // there might be room for an @if or mixin and if combo since the social in contact section will have different background
       background-color: $primary-ac;
       color: white;
       scale: 1.1;
