@@ -2,9 +2,6 @@
 
 .project-section {
   background-color: $primary-bc;
-  h2{
-    margin-bottom: 1em;
-  }
 }
 
 .projects-container {
@@ -13,41 +10,41 @@
   gap: 3rem;
 }
 
-.projects-container > li {
+.projects-container>li {
   border-radius: 10px;
   background-color: $secondary-fc;
   @media (min-width: 768px) {
-    display: flex;    
+    display: flex;
   }
-.image-container img {
-  height: 100%;
-  object-fit: cover;
-  object-position: center;  
-  filter: saturate(10%);
+  .image-container img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: saturate(10%);
     border-radius: 10px 10px 0 0;
     transition: all 0.5s ease-in-out;
     &:hover {
       filter: saturate(100%);
     }
     @media (min-width: 768px) {
-      border-radius: 10px 0 0 10px;      
+      border-radius: 10px 0 0 10px;
     }
-}
-.project-text {
-  padding: 1em;
-}
+  }
+  .project-text {
+    padding: 1em;
+  }
 }
 
 .skills {
-    color: $secondary-bc;
-    font-family: $heading-ff;
-    li {
-      display: inline;
-    }
-    li:not(:last-child) {
-      padding-right: 1rem;
-      border-right: 3px solid $secondary-bc;
-    }
+  color: $secondary-bc;
+  font-family: $heading-ff;
+  li {
+    display: inline;
+  }
+  li:not(:last-child) {
+    padding-right: 1rem;
+    border-right: 3px solid $secondary-bc;
+  }
 }
 
 .project-links {
@@ -62,6 +59,7 @@
     padding: 0.5em 1.5em;
     transition: all 0.3s linear;
     border: 1px solid $secondary-bc;
+    border-radius: 100vmax;
     &:hover,
     &:focus {
       background-color: $primary-ac;

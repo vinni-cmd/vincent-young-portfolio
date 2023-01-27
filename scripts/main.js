@@ -11,3 +11,12 @@ navLinks.forEach((link) => {
     document.body.classList.remove('nav-open');
   })
 })
+
+
+// page load animation
+
+const loader = document.querySelector('.loader')
+
+window.addEventListener("load", () => {
+  loader.classList.add('hide')
+});

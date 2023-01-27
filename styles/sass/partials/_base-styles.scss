@@ -14,8 +14,8 @@ section {
 }
 
 .wrapper {
-    width: min(90%, 1000px);
-    margin: 0 auto;
+  width: min(90%, 1000px);
+  margin: 0 auto;
 }
 
 img {
@@ -42,7 +42,10 @@ p a {
   }
 }
 
-h1,
+h1 {
+  margin: 0;
+}
+
 h2 {
-  margin: 0;        
+  margin: 0 0 1em 0;
 }

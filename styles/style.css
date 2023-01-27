@@ -345,11 +345,108 @@ p a:hover, p a:focus {
   color: #db9999;
 }
 
-h1,
-h2 {
+h1 {
   margin: 0;
 }
 
+h2 {
+  margin: 0 0 1em 0;
+}
+
+.loader {
+  position: absolute;
+  inset: 0 0 0 0;
+  z-index: 10000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5em;
+  background-color: #f7e4dc;
+}
+.loader i {
+  font-size: 6rem;
+}
+.loader.hide {
+  -webkit-animation: circle 1.3s 2s forwards;
+          animation: circle 1.3s 2s forwards;
+}
+
+.one {
+  color: #365c46;
+  scale: 0;
+  -webkit-animation: loading 2s infinite;
+          animation: loading 2s infinite;
+}
+
+.two {
+  color: #db9999;
+  scale: 0;
+  -webkit-animation: loading 1.2s infinite;
+          animation: loading 1.2s infinite;
+}
+
+.three {
+  color: #14070e;
+  scale: 0;
+  -webkit-animation: loading 1.8s infinite;
+          animation: loading 1.8s infinite;
+}
+
+@-webkit-keyframes loading {
+  0% {
+    scale: 0;
+  }
+  50% {
+    opacity: 0.5;
+    scale: 0.5;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes loading {
+  0% {
+    scale: 0;
+  }
+  50% {
+    opacity: 0.5;
+    scale: 0.5;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
+}
+@-webkit-keyframes circle {
+  0% {
+    -webkit-clip-path: circle(75%);
+            clip-path: circle(75%);
+  }
+  100% {
+    -webkit-clip-path: circle(0%);
+            clip-path: circle(0%);
+    display: none;
+  }
+}
+@keyframes circle {
+  0% {
+    -webkit-clip-path: circle(75%);
+            clip-path: circle(75%);
+  }
+  100% {
+    -webkit-clip-path: circle(0%);
+            clip-path: circle(0%);
+    display: none;
+  }
+}
 header {
   background-image: url(../../assets/images/jason-leem-50bzI1F6urA-unsplash.jpg);
   background-repeat: no-repeat;
@@ -357,9 +454,6 @@ header {
   min-height: 100vh;
   padding-top: 10rem;
   color: #f8f4f3;
-}
-header .wrapper {
-  position: relative;
 }
 header p {
   font-weight: 500;
@@ -508,11 +602,22 @@ nav {
 }
 .about-section .image-container img {
   border-radius: 1%;
+  -webkit-filter: saturate(10%);
+          filter: saturate(10%);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.about-section .image-container img:hover {
+  -webkit-filter: saturate(100%);
+          filter: saturate(100%);
 }
 @media (min-width: 480px) {
   .about-section .image-container img {
     width: 430px;
   }
+}
+.about-section h2 {
+  padding-top: 1em;
 }
 .about-section p {
   max-width: 60ch;
@@ -533,9 +638,6 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.skills-section h2 {
-  margin-bottom: 1em;
 }
 
 .skills-list {
@@ -582,9 +684,6 @@ nav {
 
 .project-section {
   background-color: #f7e4dc;
-}
-.project-section h2 {
-  margin-bottom: 1em;
 }
 
 .projects-container {
@@ -664,6 +763,7 @@ nav {
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
   border: 1px solid #365c46;
+  border-radius: 100vmax;
 }
 .project-links a:hover, .project-links a:focus {
   background-color: #db9999;
@@ -673,6 +773,9 @@ nav {
 
 .contact-section p {
   max-width: 60ch;
+}
+.contact-section span.blockspam {
+  display: none;
 }
 
 footer {
