@@ -39,6 +39,7 @@ p a {
   &:hover,
   &:focus {
     color: $primary-ac;
+    letter-spacing: 0.2rem;
   }
 }
 
@@ -48,4 +49,8 @@ h1 {
 
 h2 {
   margin: 0 0 1em 0;
+}
+
+*:focus {
+  outline: none;
 }

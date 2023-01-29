@@ -343,6 +343,7 @@ p a {
 }
 p a:hover, p a:focus {
   color: #db9999;
+  letter-spacing: 0.2rem;
 }
 
 h1 {
@@ -351,6 +352,10 @@ h1 {
 
 h2 {
   margin: 0 0 1em 0;
+}
+
+*:focus {
+  outline: none;
 }
 
 .loader {
@@ -500,7 +505,7 @@ nav {
 }
 
 .nav-toggle {
-  padding: 0.6em;
+  padding: 1em 0.6em;
   background: transparent;
   border: 0;
   cursor: pointer;
@@ -508,6 +513,9 @@ nav {
   right: 1em;
   top: 1em;
   z-index: 20;
+}
+.nav-toggle:focus {
+  background-color: #f8f4f3;
 }
 
 .nav-open nav {
@@ -697,6 +705,8 @@ nav {
 .projects-container > li {
   border-radius: 10px;
   background-color: #f8f4f3;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 @media (min-width: 768px) {
   .projects-container > li {
@@ -726,6 +736,10 @@ nav {
   padding: 1em;
 }
 
+.projects-container > li:hover,
+.projects-container > li:focus-within {
+  scale: 0.98;
+}
 .projects-container > li:hover .image-container img,
 .projects-container > li:focus-within .image-container img {
   -webkit-filter: saturate(100%);
