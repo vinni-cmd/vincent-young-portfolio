@@ -356,7 +356,7 @@ h2 {
 .loader {
   position: absolute;
   inset: 0 0 0 0;
-  z-index: 10000;
+  z-index: 30;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -463,7 +463,7 @@ nav {
   background-color: #f7e4dc;
   color: #365c46;
   inset: 0;
-  z-index: 100;
+  z-index: 10;
   translate: 100%;
   -webkit-transition: translate 250ms ease-in-out;
   transition: translate 250ms ease-in-out;
@@ -507,7 +507,7 @@ nav {
   position: fixed;
   right: 1em;
   top: 1em;
-  z-index: 1000;
+  z-index: 20;
 }
 
 .nav-open nav {
