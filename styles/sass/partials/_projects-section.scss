@@ -65,7 +65,7 @@
     padding: 0.5em 1.5em;
     transition: all 0.3s linear;
     border: 1px solid $secondary-bc;
-    border-radius: 100vmax;
+    border-radius: 10px;
     &:hover,
     &:focus {
       background-color: $primary-ac;
