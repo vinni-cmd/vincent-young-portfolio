@@ -1,6 +1,9 @@
 .contact-section {
   p {
-  // increases readability state and setState
-  max-width: 60ch;
+    // increases readability
+    max-width: 60ch;
+  }
+  span.blockspam {
+    display: none;
   }
 }

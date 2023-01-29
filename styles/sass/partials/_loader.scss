@@ -1,0 +1,55 @@
+@use 'variables' as *;
+
+.loader {
+  position: absolute;
+  inset: 0 0 0 0;
+  z-index: 30;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  background-color: $primary-bc;
+  i {
+    font-size: 6rem;
+  }
+  &.hide {
+    animation: circle 4s 2s forwards;
+  }
+}
+
+.one {
+  color: $secondary-bc;
+  animation: loading 2.4s infinite;
+}
+
+.two {
+  color: $primary-ac;
+  animation: loading 2.4s 0.8s infinite;
+}
+
+.three {
+  color: $primary-fc;
+  animation: loading 2.4s 1.6s infinite;
+}
+
+@keyframes loading {
+  0% {
+    scale: 1;
+  }
+  17% {
+    scale: 1.5;
+  }
+  33% {
+    scale: 1;
+  }
+}
+
+@keyframes circle {
+  0% {
+    clip-path: circle(75%);
+  }
+  100% {
+    clip-path: circle(0%);
+    display: none;
+  }
+}
