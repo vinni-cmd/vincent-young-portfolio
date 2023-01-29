@@ -19,7 +19,7 @@ nav {
   align-items: center;
   color: $primary-fc;
   .nav-link {
-    display: block;
+    display: none;
     color: inherit;
     font-size: 3rem;
     padding: 1em 1em;
@@ -45,6 +45,10 @@ nav {
 
 .nav-open nav {
   translate: 0;
+}
+
+.nav-open .nav-link {
+  display: block;
 }
 
 .nav-open .hamburger {
