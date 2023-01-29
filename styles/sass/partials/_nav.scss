@@ -33,7 +33,7 @@ nav {
 }
 
 .nav-toggle {
-  padding: 0.6em;
+  padding: 1em 0.6em;
   background: transparent;
   border: 0;
   cursor: pointer;
@@ -41,6 +41,9 @@ nav {
   right: 1em;
   top: 1em;
   z-index: 20;
+  &:focus {
+    background-color: $secondary-fc;
+  }
 }
 
 .nav-open nav {

@@ -353,6 +353,10 @@ h2 {
   margin: 0 0 1em 0;
 }
 
+*:focus {
+  outline: none;
+}
+
 .loader {
   position: absolute;
   inset: 0 0 0 0;
@@ -500,7 +504,7 @@ nav {
 }
 
 .nav-toggle {
-  padding: 0.6em;
+  padding: 1em 0.6em;
   background: transparent;
   border: 0;
   cursor: pointer;
@@ -508,6 +512,9 @@ nav {
   right: 1em;
   top: 1em;
   z-index: 20;
+}
+.nav-toggle:focus {
+  background-color: #f8f4f3;
 }
 
 .nav-open nav {
