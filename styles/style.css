@@ -697,6 +697,8 @@ nav {
 .projects-container > li {
   border-radius: 10px;
   background-color: #f8f4f3;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 @media (min-width: 768px) {
   .projects-container > li {
@@ -726,6 +728,10 @@ nav {
   padding: 1em;
 }
 
+.projects-container > li:hover,
+.projects-container > li:focus-within {
+  scale: 0.98;
+}
 .projects-container > li:hover .image-container img,
 .projects-container > li:focus-within .image-container img {
   -webkit-filter: saturate(100%);
