@@ -343,6 +343,7 @@ p a {
 }
 p a:hover, p a:focus {
   color: #db9999;
+  letter-spacing: 0.2rem;
 }
 
 h1 {
