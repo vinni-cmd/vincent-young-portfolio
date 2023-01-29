@@ -20,18 +20,22 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
-    filter: saturate(10%);
+    filter: saturate(0%);
     border-radius: 10px 10px 0 0;
     transition: all 0.5s ease-in-out;
-    &:hover {
-      filter: saturate(100%);
-    }
     @media (min-width: 768px) {
       border-radius: 10px 0 0 10px;
     }
   }
   .project-text {
     padding: 1em;
+  }
+}
+
+.projects-container>li:hover,
+.projects-container>li:focus-within {
+  .image-container img {
+    filter: saturate(100%);
   }
 }
 

@@ -601,8 +601,8 @@ nav {
   transition: all 0.5s ease-in-out;
 }
 .about-section .image-container img:hover {
-  -webkit-filter: saturate(100%);
-          filter: saturate(100%);
+  -webkit-filter: saturate(80%);
+          filter: saturate(80%);
 }
 @media (min-width: 480px) {
   .about-section .image-container img {
@@ -707,15 +707,11 @@ nav {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  -webkit-filter: saturate(10%);
-          filter: saturate(10%);
+  -webkit-filter: saturate(0%);
+          filter: saturate(0%);
   border-radius: 10px 10px 0 0;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-}
-.projects-container > li .image-container img:hover {
-  -webkit-filter: saturate(100%);
-          filter: saturate(100%);
 }
 @media (min-width: 768px) {
   .projects-container > li .image-container img {
@@ -724,6 +720,12 @@ nav {
 }
 .projects-container > li .project-text {
   padding: 1em;
+}
+
+.projects-container > li:hover .image-container img,
+.projects-container > li:focus-within .image-container img {
+  -webkit-filter: saturate(100%);
+          filter: saturate(100%);
 }
 
 .skills {
