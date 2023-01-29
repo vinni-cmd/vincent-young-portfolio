@@ -359,7 +359,7 @@ h2 {
 }
 
 .loader {
-  position: absolute;
+  position: fixed;
   inset: 0 0 0 0;
   z-index: 30;
   display: -webkit-box;
@@ -378,8 +378,8 @@ h2 {
   font-size: 6rem;
 }
 .loader.hide {
-  -webkit-animation: circle 4s 2s forwards;
-          animation: circle 4s 2s forwards;
+  -webkit-animation: circle 2s 2s ease-in forwards;
+          animation: circle 2s 2s ease-in forwards;
 }
 
 .one {
