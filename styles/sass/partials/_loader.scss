@@ -1,7 +1,7 @@
 @use 'variables' as *;
 
 .loader {
-  position: absolute;
+  position: fixed;
   inset: 0 0 0 0;
   z-index: 30;
   display: flex;
@@ -13,7 +13,7 @@
     font-size: 6rem;
   }
   &.hide {
-    animation: circle 4s 2s forwards;
+    animation: circle 2s 2s ease-in forwards;
   }
 }
 
