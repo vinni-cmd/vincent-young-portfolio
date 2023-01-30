@@ -609,17 +609,25 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 2em;
+}
+@media (min-width: 780px) {
+  .about-section .wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 .about-section .image-container img {
-  border-radius: 1%;
+  border-radius: 50%;
   -webkit-filter: saturate(10%);
           filter: saturate(10%);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-}
-.about-section .image-container img:hover {
-  -webkit-filter: saturate(80%);
-          filter: saturate(80%);
 }
 @media (min-width: 480px) {
   .about-section .image-container img {
@@ -631,6 +639,12 @@ nav {
 }
 .about-section p {
   max-width: 60ch;
+}
+
+.about-section:hover img,
+.about-section:focus-within img {
+  -webkit-filter: saturate(80%);
+          filter: saturate(80%);
 }
 
 .skills-section {
