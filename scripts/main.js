@@ -16,7 +16,7 @@ navLinks.forEach((link) => {
 });
 
 
-// page load animation
+// page load animation 
 
 const loader = document.querySelector('.loader')
 
@@ -25,14 +25,9 @@ window.addEventListener("load", () => {
 });
 
 // animate on scroll using intersection observer
-const observer = new IntersectionObserver((entries) => {
+const observer = new IntersectionObserver( entries => {
   entries.forEach((entry)=>{
-    console.log('entry: ', entry);
-    if (entry.isIntersecting) {
-      entry.target.classList.add('show');
-    } else {
-      entry.target.classList.remove('show');
-    }
+    entry.target.classList.toggle('show', entry.isIntersecting);
   })
 });
 
