@@ -456,6 +456,28 @@ h2 {
     display: none;
   }
 }
+.hidden {
+  opacity: 0;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hidden {
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+}
+.show {
+  opacity: 1;
+  -webkit-filter: blur(0);
+          filter: blur(0);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
 header {
   background-image: url(../../assets/images/jason-leem-50bzI1F6urA-unsplash.jpg);
   background-repeat: no-repeat;
