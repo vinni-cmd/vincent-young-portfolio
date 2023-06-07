@@ -352,7 +352,7 @@ p a {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-p a:hover, p a:focus {
+p a:hover, p a:focus-visible {
   color: #db9999;
   letter-spacing: 0.1rem;
 }
@@ -466,8 +466,8 @@ h2 {
 
 @media (prefers-reduced-motion: no-preference) {
   .hidden {
-    -webkit-transition: all 1s;
-    transition: all 1s;
+    -webkit-transition: all 1.5s;
+    transition: all 1.5s;
   }
 }
 .show {
@@ -537,7 +537,7 @@ nav {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-.nav-list .nav-link:hover, .nav-list .nav-link:focus {
+.nav-list .nav-link:hover, .nav-list .nav-link:focus-visible {
   color: #db9999;
   scale: 1.1;
 }
@@ -555,8 +555,14 @@ nav {
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
-.nav-toggle:focus, .nav-toggle:hover {
+.nav-toggle:focus-visible {
   border: 3px solid white;
+}
+.nav-toggle:focus-visible::before {
+  content: "";
+  position: absolute;
+  inset: 0px;
+  border: 3px solid #db9999;
 }
 
 .nav-open nav {
@@ -628,7 +634,7 @@ nav {
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.social-list a:hover, .social-list a:focus {
+.social-list a:hover, .social-list a:focus-visible {
   color: #db9999;
   scale: 1.2;
 }
@@ -834,7 +840,7 @@ nav {
   transition: all 0.3s linear;
   border-radius: 10px;
 }
-.project-links a:hover, .project-links a:focus {
+.project-links a:hover, .project-links a:focus-visible {
   background-color: #db9999;
   color: white;
   scale: 1.1;
