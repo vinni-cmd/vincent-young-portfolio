@@ -25,7 +25,7 @@ nav {
     padding: 1em 1em;
     transition: all 0.3s ease-in-out;
     &:hover,
-    &:focus {
+    &:focus-visible {
       color: $primary-ac;
       scale: 1.1;
     }
@@ -43,9 +43,14 @@ nav {
   z-index: 20;
   border: 3px solid rgba($color: #000000, $alpha: 0.0);
   transition: all 0.3s ease-in;
-  &:focus,
-  &:hover {
+  &:focus-visible {
     border: 3px solid white;
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0px  ;
+        border: 3px solid $primary-ac;
+      }
   }
 }
 
