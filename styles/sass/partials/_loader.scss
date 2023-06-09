@@ -9,8 +9,8 @@
   align-items: center;
   gap: 0.9em;
   background-color: $primary-bc;
-  i {
-    font-size: 6rem;
+  span {
+    font-size: 4rem;
   }
   &.hide {
     animation: circle 1.2s 1.5s ease-in forwards;

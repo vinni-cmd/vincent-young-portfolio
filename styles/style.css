@@ -385,8 +385,8 @@ h2 {
   gap: 0.9em;
   background-color: #f7e4dc;
 }
-.loader i {
-  font-size: 6rem;
+.loader span {
+  font-size: 4rem;
 }
 .loader.hide {
   -webkit-animation: circle 1.2s 1.5s ease-in forwards;
