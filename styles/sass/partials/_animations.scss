@@ -6,12 +6,12 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .hidden {
-    transition: all 1.5s;
+    transition: all 1.8s;
   }
 }
 
 .show {
+  transform: translateX(0);
   opacity: 1;
   filter: blur(0);
-  transform: translateX(0);
 }

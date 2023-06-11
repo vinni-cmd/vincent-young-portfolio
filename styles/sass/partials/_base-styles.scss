@@ -42,7 +42,7 @@ p a {
   &:hover,
   &:focus-visible {
     color: $primary-ac;
-    letter-spacing: 0.1rem;
+    text-decoration: underline;
   }
 }
 
